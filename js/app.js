@@ -17,6 +17,7 @@ function gameTime() {
 	.mouseleave(function() {
 		$('.ryu-ready').hide();
 		$('.ryu-still').show();
+		console.log('mouseleave');
 	})
 	.mousedown(function() {
 		playHadouken();
