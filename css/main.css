@@ -57,3 +57,12 @@ body {
 	z-index: 10;
 }
 
+.instructions {
+	position: absolute;
+	left: 650px;
+	padding-top: 75px;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+  	font-size: 2em;
+  	line-height: 1.2em;
+}
