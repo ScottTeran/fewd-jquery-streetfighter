@@ -17,11 +17,10 @@ function gameTime() {
 	.mouseleave(function() {
 		$('.ryu-ready').hide();
 		$('.ryu-still').show();
-		console.log('mouseleave');
 	})
 	.mousedown(function() {
 		playHadouken();
-		$('.ryu-still').hide();
+		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
 		$('.hadouken').finish().show()
 		.animate(
@@ -40,7 +39,7 @@ function gameTime() {
 
 	$(document).keydown(function(e) {
 		if (e.keyCode == 88) {
-			$('.ryu-still').hide();
+			$('.ryu-still, .ryu-ready').hide();
 			$('.ryu-cool').show();
 		}
 	})
