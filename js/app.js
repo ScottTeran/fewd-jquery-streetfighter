@@ -27,6 +27,7 @@ function gameTime() {
 			{'left': '1020px'},
 			500,
 			function() {
+				$(this).stop();
 				$(this).hide();
 				$(this).css('left', '520px');
 			}
