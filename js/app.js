@@ -15,12 +15,12 @@ function gameTime() {
 		$('.ryu-ready').show();
 	})
 	.mouseleave(function() {
-		$('.ryu-ready').hide();
+		$('.ryu-ready, .ryu-throwing').hide();
 		$('.ryu-still').show();
 	})
 	.mousedown(function() {
 		playHadouken();
-		$('.ryu-ready').hide();
+		$('.ryu-ready, .ryu-still').hide();
 		$('.ryu-throwing').show();
 		$('.hadouken').finish().show()
 		.animate(
